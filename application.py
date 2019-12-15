@@ -6,6 +6,10 @@ app = Flask(__name__)
 
 cl = Cluster()
 
+@app.route('/sendData',methods = ['GET'])
+def getting():
+    return "yoyo" 
+
 @app.route('/sendData',methods = ['POST'])
 def club():
     print(request.json)
