@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 cl = Cluster()
 
-@app.route('/sendData',methods = ['GET'])
+@app.route('/getData',methods = ['GET'])
 def getting():
     return "yoyo" 
 
